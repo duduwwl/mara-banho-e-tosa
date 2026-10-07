@@ -30,7 +30,7 @@ body{font-family:'DM Sans',Manrope,Arial,sans-serif;background:#fffdf5;color:var
 .gallery-section{background:#fff}
 .booking-strip{background:var(--ink)}
 .footer-brand img{width:43px;height:43px;object-fit:contain}
-.site-footer{background:#fff}
+.site-footer{background:var(--lime);border-top-color:var(--ink)}
 .admin-banner{background:var(--lime)}
 .quote-card{background:var(--ink);color:var(--white)}
 .story-badge,.signature{display:none}
