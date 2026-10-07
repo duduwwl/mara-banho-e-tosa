@@ -38,10 +38,10 @@
       </div>
       <div class="hero-visual">
         <div class="hero-fan" aria-label="Pets cuidados pela Mara">
-          <div class="fan-photo fan-back-left"><img src="./assets/luna.png" alt="Pet com acessório rosa" loading="eager" decoding="sync" /></div>
-          <div class="fan-photo fan-back-right"><img src="./assets/nina.png" alt="Pet com laços coloridos" loading="eager" decoding="sync" /></div>
-          <div class="fan-photo fan-back-small"><img src="./assets/snow.png" alt="Pet com laço vermelho" loading="eager" decoding="sync" /></div>
-          <div class="fan-photo fan-front"><img src="./assets/bento.png" alt="Cachorrinho pronto para um dia de beleza" loading="eager" fetchpriority="high" decoding="sync" /></div>
+          <button class="fan-photo fan-back-left" type="button" aria-label="Ampliar foto do pet com acessório rosa"><img src="./assets/luna.png" alt="Pet com acessório rosa" loading="eager" decoding="sync" /></button>
+          <button class="fan-photo fan-back-right" type="button" aria-label="Ampliar foto do pet com laços coloridos"><img src="./assets/nina.png" alt="Pet com laços coloridos" loading="eager" decoding="sync" /></button>
+          <button class="fan-photo fan-back-small" type="button" aria-label="Ampliar foto do pet com laço vermelho"><img src="./assets/snow.png" alt="Pet com laço vermelho" loading="eager" decoding="sync" /></button>
+          <button class="fan-photo fan-front" type="button" aria-label="Ampliar foto do cachorrinho pronto para um dia de beleza"><img src="./assets/bento.png" alt="Cachorrinho pronto para um dia de beleza" loading="eager" fetchpriority="high" decoding="sync" /></button>
         </div>
       </div>
     </section>
@@ -73,6 +73,10 @@
   </main>
 
   <footer class="site-footer"><div class="footer-brand"><img src="./assets/logo-mara.png" alt="" /><span>Mara <small>banho & tosa</small></span></div><div><strong>Rua Doutor Melo Viana, 273</strong><span>Lavras · Minas Gerais</span></div><div><strong>(35) 98846-4055</strong><span>Fale com a Mara</span></div><a href="./admin.html" class="admin-link">Área administrativa <span>↗</span></a></footer>
+  <div class="image-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="image-lightbox-close" type="button" aria-label="Fechar foto ampliada">×</button>
+    <img class="image-lightbox-image" alt="" />
+  </div>
   <script src="./app.js"></script>
 </body>
 </html>
