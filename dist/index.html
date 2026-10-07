@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Mara Banho & Tosa: beleza, higiene e cuidado individual para seu pet em Lavras." />
   <title>Mara Banho & Tosa | Cuidado que aparece</title>
+  <link rel="preload" as="image" href="./assets/logo-mara.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="./assets/bento.png" fetchpriority="high" />
+  <link rel="preload" as="image" href="./assets/luna.png" />
+  <link rel="preload" as="image" href="./assets/nina.png" />
+  <link rel="preload" as="image" href="./assets/snow.png" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -33,10 +38,10 @@
       </div>
       <div class="hero-visual">
         <div class="hero-fan" aria-label="Pets cuidados pela Mara">
-          <div class="fan-photo fan-back-left"><img src="./assets/luna.png" alt="Pet com acessório rosa" /></div>
-          <div class="fan-photo fan-back-right"><img src="./assets/nina.png" alt="Pet com laços coloridos" /></div>
-          <div class="fan-photo fan-back-small"><img src="./assets/snow.png" alt="Pet com laço vermelho" /></div>
-          <div class="fan-photo fan-front"><img src="./assets/bento.png" alt="Cachorrinho pronto para um dia de beleza" /></div>
+          <div class="fan-photo fan-back-left"><img src="./assets/luna.png" alt="Pet com acessório rosa" loading="eager" decoding="sync" /></div>
+          <div class="fan-photo fan-back-right"><img src="./assets/nina.png" alt="Pet com laços coloridos" loading="eager" decoding="sync" /></div>
+          <div class="fan-photo fan-back-small"><img src="./assets/snow.png" alt="Pet com laço vermelho" loading="eager" decoding="sync" /></div>
+          <div class="fan-photo fan-front"><img src="./assets/bento.png" alt="Cachorrinho pronto para um dia de beleza" loading="eager" fetchpriority="high" decoding="sync" /></div>
         </div>
       </div>
     </section>
@@ -71,3 +76,4 @@
   <script src="./app.js"></script>
 </body>
 </html>
+
