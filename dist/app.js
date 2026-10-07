@@ -13,3 +13,13 @@ const bookingForm=document.querySelector('#booking-form');
 if(bookingForm){bookingForm.addEventListener('submit',(event)=>{event.preventDefault();bookingForm.hidden=true;document.querySelector('.booking-success').hidden=false;});}
 
 document.querySelectorAll('.row-more').forEach((button)=>button.addEventListener('click',()=>{const status=button.parentElement.querySelector('.status');if(status){status.classList.toggle('confirmed');status.classList.toggle('waiting');status.textContent=status.classList.contains('confirmed')?'Confirmado':'Aguardando';}}));
+
+const lightbox=document.querySelector('.image-lightbox');
+const lightboxImage=lightbox?.querySelector('.image-lightbox-image');
+const lightboxClose=lightbox?.querySelector('.image-lightbox-close');
+const closeLightbox=()=>{if(!lightbox)return;lightbox.hidden=true;document.body.classList.remove('lightbox-open');};
+document.querySelectorAll('.fan-photo').forEach((photo)=>photo.addEventListener('click',()=>{if(!lightbox||!lightboxImage)return;const image=photo.querySelector('img');if(!image)return;lightboxImage.src=image.currentSrc||image.src;lightboxImage.alt=image.alt;lightbox.hidden=false;document.body.classList.add('lightbox-open');lightboxClose?.focus();}));
+lightboxClose?.addEventListener('click',closeLightbox);
+lightbox?.addEventListener('click',(event)=>{if(event.target===lightbox)closeLightbox();});
+document.addEventListener('keydown',(event)=>{if(event.key==='Escape'&&lightbox&&!lightbox.hidden)closeLightbox();});
+
