@@ -20,7 +20,7 @@ body{font-family:'DM Sans',Manrope,Arial,sans-serif;background:#fffdf5;color:var
 .button-dark{background:var(--ink);color:var(--white)}
 .hero-main-image{box-shadow:18px 20px 0 var(--white)}
 .hero-ring{border-color:#171717;opacity:.28}
-.marquee{background:var(--lime);border-top:1px solid #e3bc00;border-bottom:1px solid #e3bc00}
+.marquee{background:var(--ink);color:var(--lime);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
 .service-card,.service-card.featured{background:#fff;border:1px solid var(--line)}
 .service-card.featured{box-shadow:8px 8px 0 var(--lime)}
 .service-icon{background:var(--lime)}
