@@ -68,3 +68,7 @@ body{font-family:'DM Sans',Manrope,Arial,sans-serif;background:#fffdf5;color:var
 .story-image img{border:9px solid var(--lime);border-radius:30px 100px 30px 30px;box-shadow:none}
 .agenda-pet{position:relative;display:block;width:min(100%,360px);height:430px;left:auto;right:auto;bottom:auto;margin:42px 0 0;border:0;border-radius:38px 140px 38px 38px;box-shadow:none;transform:none}
 @media (max-width:650px){.agenda-pet{width:100%;max-width:320px;height:380px;margin:35px auto 0;border-radius:32px 110px 32px 32px}}
+.brand img{width:58px!important;height:58px!important;aspect-ratio:1/1;object-fit:contain!important;object-position:center!important;display:block;flex:0 0 58px;overflow:visible}
+.agenda-pet{border:8px solid var(--lime)!important}
+@media (max-width:650px){.brand img{width:45px!important;height:45px!important;flex-basis:45px}.agenda-pet{border-width:6px!important}}
+
